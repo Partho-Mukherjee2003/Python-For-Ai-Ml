@@ -14,18 +14,7 @@ print(f" Your choice:{reversed_Word_Dict[my_Choice]}\n Computer's Choice:{revers
 if(my_Choice == computer_Choice):
   print("It's draw.. try again!")
 else:
-  if(computer_Choice == -1 and my_Choice == 1):
-    print("You are lose")
-  elif(computer_Choice== -1 and my_Choice==0):
+  if(computer_Choice - my_Choice == -2 or computer_Choice - my_Choice == 1):
     print("You are win")
-  elif(computer_Choice == 0 and my_Choice == -1):
-    print("You are lose")
-  elif(computer_Choice == 0 and my_Choice == 1):
-    print("You are win")
-  elif(computer_Choice == 1 and my_Choice == -1):
-    print("You are win")
-  elif(computer_Choice == 1 and my_Choice == 0):
-    print("You are lose")
   else:
-    print("Invalid input.. try again!")
-
+    print("You are lose")
